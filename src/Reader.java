@@ -14,27 +14,27 @@ public class Reader {
         this.Телефон = Телефон;
     }
 
-    public void takeBook(int count) {
+    public void takeBook(int Количество) {
 
-        System.out.println(ФИО + " взял " + count + " книги");
+        System.out.println(ФИО + " взял " + Количество + " книги");
     }
 
-    public void takeBook(String... bookNames) {
+    public void takeBook(String... НазвКниги) {
         System.out.print(ФИО + " взял книги: ");
-        for (String book : bookNames) {
+        for (String book : НазвКниги) {
             System.out.print(book + ", ");
         }
         System.out.println();
     }
 
-    public void returnBook(int count) {
+    public void returnBook(int Количество) {
 
-        System.out.println(ФИО + " вернул " + count + " книги");
+        System.out.println(ФИО + " вернул " + Количество + " книги");
     }
 
-    public void returnBook(String... bookNames) {
+    public void returnBook(String... НазвКниги) {
         System.out.print(ФИО + " вернул книги: ");
-        for (String book : bookNames) {
+        for (String book : НазвКниги) {
             System.out.print(book + ", ");
         }
         System.out.println();
